@@ -1,0 +1,262 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set default styles for the HTML and body elements */
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Define container styles */
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  min-height: 100%; /* For Mozilla */
+}
+
+/* Header styles */
+.header {
+  height: 84%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #7d7d7d;
+}
+
+/* Navigation bar styles */
+nav {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+}
+
+/* logo */
+.box-1 img {
+  width: auto;
+  height: 14px;
+  margin-left: 10px;
+}
+
+.box-1 {
+  flex-basis: 56%;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 1; /* Place the video behind the other elements */
+}
+
+.box-2 {
+  flex-basis: 44%;
+  background-color: #f9f9f9;;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  z-index: 1; /* Place the video behind the other elements */
+}
+
+/* about & gmail size */
+.box-2 span {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.email,
+.about {
+  text-decoration: none;
+  color: #1a1a1a;
+}
+
+
+/* Scrool to next icon */
+.box-2 img {
+  width: auto;
+  height: 16px;
+  margin-right: 10px;
+}
+
+
+
+
+
+
+
+/* Pages background colors */
+#one {
+  background: #e9e9e9;
+}
+#two {
+  background: #e9e9e9;;
+}
+#three {
+  background: #e9e9e9;;
+}
+#four {
+  background: #e9e9e9; 
+  position: relative;
+}
+
+#five {
+  background: #e9e9e9;;
+}
+
+
+
+
+
+
+
+
+
+/* Scroll to top button Size */
+.image-container img {
+  width: 40px;
+  height: auto;
+  cursor: pointer;
+}
+
+/* Scroll to top button Position */
+.image-container {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Footer styles */
+footer {
+  width: 100%;
+  height: 30vh;
+  position: relative;
+  background-color: #1a1a1a;
+}
+
+.box {
+  width: 90%;
+  height: 30%;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  background-color: #b3b3b3;
+  position: absolute;
+  bottom: 51%;
+}
+
+.content {
+  margin-left: 0;
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.content a {
+  color: #d9d9d9;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: regular;
+  font-family: Helvetica, sans-serif;
+  margin-bottom: 10px;
+}
+
+.content a:hover {
+  text-decoration: none;
+}
+
+.content p {
+  margin: 0;
+  font-size: 14px;
+  color: #858585;
+  text-align: right;
+}
+
+#video-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+
+
+/* Add this CSS to your existing styles */
+
+/* Image box styles */
+.image-box {
+  margin: 20px;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff; /* Background color for the box */
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease; /* Smooth transition for scaling effect */
+}
+
+/* Apply scaling effect on hover */
+.image-box:hover img {
+  transform: scale(1.05); /* Increase scale by 5% on hover */
+}
+
+
+/* Add this CSS to your existing styles */
+
+/* Text box styles */
+.text-box {
+  margin: 20px;
+  flex: 1;
+  display: flex;
+  flex-direction: row; /* Display content in a row */
+ 
+  border: #1a1a1a;
+  overflow: hidden; /* Hide any overflow from the image */
+}
+
+/* Divide the text-box into two sections */
+.text-content {
+  flex: 5; /* Take up 70% of the available width */
+  padding: 20px;
+}
+
+.image-content {
+  flex: 5; /* Take up 30% of the available width */
+ margin-top: 30px;
+}
+
+.text-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.6s ease; /* Smooth transition for scaling effect */
+}
+
+/* Apply scaling effect on hover */
+.text-box:hover img {
+  transform: scale(1.05); /* Increase scale by 5% on hover */
+}
+

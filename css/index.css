@@ -1,0 +1,93 @@
+
+/* Set default styles for the body */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #eaecf0;
+}
+
+/* Container styles */
+.container {
+  position: fixed;
+  margin: 10px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+/* Header styles */
+.header {
+  flex: 90%;
+  background-color: white;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* Image Position and Size */
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+ 
+}
+
+/* Hide header */
+.hidden-header {
+  display: none;
+}
+
+/* Footer styles */
+.footer {
+  flex: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Spacing */
+.left-group {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-right: auto;
+  margin-left: 30px;
+}
+
+/* Logo */
+.logo-icon {
+  width: auto;
+  height: 14px;
+  margin-bottom: 1px;
+}
+
+/* About & Gmail */
+.left-group span {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: pointer;
+  color: rgb(47, 47, 47);
+}
+
+.email,
+.about {
+  text-decoration: none;
+}
+
+/* Scroll Icon */
+.scroll-icon {
+  width: auto;
+  height: 16px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+
